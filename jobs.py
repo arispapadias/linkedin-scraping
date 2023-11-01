@@ -49,7 +49,6 @@ async def scrape_jobs(job_title, location, posted_date, job_level):
     if resp.status_code != 200:
         return {"error": f"bad status code {resp.status_code}"}
 
-    # Your scraping logic here...
     # Parse the HTML response and extract job listings and descriptions
     job_data = []
 
